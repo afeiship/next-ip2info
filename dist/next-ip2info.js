@@ -2,8 +2,8 @@
  * name: @feizheng/next-ip2info
  * description: Get infomation from ip.
  * homepage: https://github.com/afeiship/next-ip2info
- * version: 1.0.0
- * date: 2020-06-24T02:49:49.502Z
+ * version: 1.0.1
+ * date: 2020-06-24T07:49:01.893Z
  * license: MIT
  */
 
@@ -25,9 +25,9 @@
         var matched = INFO_RE.exec(resStr);
         resolve({
           ip: matched[1],
-          address: matched[2],
+          location: matched[2],
           os: matched[3],
-          device: matched[4],
+          browser: matched[4],
         });
       })
     })

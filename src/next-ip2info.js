@@ -16,9 +16,9 @@
         var matched = INFO_RE.exec(resStr);
         resolve({
           ip: matched[1],
-          address: matched[2],
+          location: matched[2],
           os: matched[3],
-          device: matched[4],
+          browser: matched[4],
         });
       })
     })

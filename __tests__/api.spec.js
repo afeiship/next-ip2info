@@ -6,9 +6,9 @@ describe('api.basic test', () => {
     nx.ip2info('8.8.8.8').then(res=>{
       console.log(res);
       expect(res).toHaveProperty('ip');
-      expect(res).toHaveProperty('address');
+      expect(res).toHaveProperty('location');
       expect(res).toHaveProperty('os');
-      expect(res).toHaveProperty('device');
+      expect(res).toHaveProperty('browser');
       done();
     })
   });
