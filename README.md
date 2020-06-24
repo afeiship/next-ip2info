@@ -29,6 +29,9 @@ nx.ip2info('8.8.8.8').then(res=>{
 */
 ```
 
+## resources
+- http://www.cz88.net/ip/
+
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-ip2info/blob/master/LICENSE.txt).
 
