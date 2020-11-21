@@ -3,7 +3,7 @@
  * description: Get infomation from ip.
  * homepage: https://github.com/afeiship/next-ip2info
  * version: 1.0.0
- * date: 2020-11-21 09:11:20
+ * date: 2020-11-21 09:13:17
  * license: MIT
  */
 
