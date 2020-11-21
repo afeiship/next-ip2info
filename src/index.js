@@ -1,6 +1,6 @@
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
   var fetch = require('node-fetch');
   var iconvLite = require('iconv-lite');
   var RETURN_BUFFER = function (res) { return res.buffer(); };
@@ -11,17 +11,19 @@
   nx.ip2info = function (inIp) {
     var url = 'http://ipaddr.cz88.net/data.php?ip=' + inIp;
     return new Promise(function (resolve) {
-      fetch(url).then(RETURN_BUFFER).then(function (res) {
-        var resStr = iconvLite.decode(res, 'gbk');
-        var matched = INFO_RE.exec(resStr);
-        resolve({
-          ip: matched[1],
-          location: matched[2],
-          os: matched[3],
-          browser: matched[4],
+      fetch(url)
+        .then(RETURN_BUFFER)
+        .then(function (res) {
+          var resStr = iconvLite.decode(res, 'gbk');
+          var matched = INFO_RE.exec(resStr);
+          resolve({
+            ip: matched[1],
+            location: matched[2],
+            os: matched[3],
+            browser: matched[4]
+          });
         });
-      })
-    })
+    });
   };
 
   if (typeof module !== 'undefined' && module.exports) {

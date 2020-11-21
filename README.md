@@ -8,12 +8,12 @@
 
 ## installation
 ```bash
-npm install -S @feizheng/next-ip2info
+npm install -S @jswork/next-ip2info
 ```
 
 ## usage
 ```js
-import '@feizheng/next-ip2info';
+import '@jswork/next-ip2info';
 
 nx.ip2info('8.8.8.8').then(res=>{
   console.log(res);
@@ -35,14 +35,14 @@ nx.ip2info('8.8.8.8').then(res=>{
 ## license
 Code released under [the MIT license](https://github.com/afeiship/next-ip2info/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@feizheng/next-ip2info
-[version-url]: https://npmjs.org/package/@feizheng/next-ip2info
+[version-image]: https://img.shields.io/npm/v/@jswork/next-ip2info
+[version-url]: https://npmjs.org/package/@jswork/next-ip2info
 
-[license-image]: https://img.shields.io/npm/l/@feizheng/next-ip2info
+[license-image]: https://img.shields.io/npm/l/@jswork/next-ip2info
 [license-url]: https://github.com/afeiship/next-ip2info/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@feizheng/next-ip2info
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-ip2info
 [size-url]: https://github.com/afeiship/next-ip2info/blob/master/dist/next-ip2info.min.js
 
-[download-image]: https://img.shields.io/npm/dw/@feizheng/next-ip2info
-[download-url]: https://www.npmjs.com/package/@feizheng/next-ip2info
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-ip2info
+[download-url]: https://www.npmjs.com/package/@jswork/next-ip2info
